@@ -13,7 +13,7 @@ const CourseList = () => {
           key={course.id} // Use `course.id` instead of index for a unique key
           className="course-item"
           style={{
-            backgroundColor: course.completed ? 'none' : 'white',
+            backgroundColor: course.completed ? 'green' : 'white',
           }}
         >
           <span className="course-item-col-1">
