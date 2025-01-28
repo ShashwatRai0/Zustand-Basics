@@ -13,7 +13,7 @@ const CourseList = () => {
           key={course.id} // Use `course.id` instead of index for a unique key
           className="course-item"
           style={{
-            backgroundColor: course.completed ? '#00FF0044' : 'white',
+            backgroundColor: course.completed ? 'none' : 'white',
           }}
         >
           <span className="course-item-col-1">
@@ -23,7 +23,9 @@ const CourseList = () => {
               onChange={() => toggleCourseStatus(course.id)} // Pass reference correctly
             />
           </span>
-          <span style={{color:"black"}}>{course?.title}</span>
+          <span style={{color:"black",
+                  textDecoration: course.completed ? 'line-through' : 'none',
+                }}>{course?.title}</span>
           <button
             onClick={() => removeCourse(course.id)} 
             className="delete-btn"
