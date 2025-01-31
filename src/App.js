@@ -13,7 +13,7 @@ const App = () => {
           marginBottom: "2rem",
         }}
       >
-        My Course List
+        My TO-DO List
       </h1>
       <CourseForm />
       <CourseList />

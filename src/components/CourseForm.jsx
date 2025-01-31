@@ -24,7 +24,7 @@ const CourseForm = () => {
         value={courseTitle}
         onChange={(e) => setCourseTitle(e.target.value)}
       />
-      <button onClick={handleCourseSubmit}>Add Course</button>
+      <button onClick={handleCourseSubmit}>Add TO-DO</button>
     </div>
   )
 }

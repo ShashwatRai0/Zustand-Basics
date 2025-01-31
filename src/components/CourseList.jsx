@@ -23,9 +23,7 @@ const CourseList = () => {
               onChange={() => toggleCourseStatus(course.id)} // Pass reference correctly
             />
           </span>
-          <span style={{color:"black",
-                  textDecoration: course.completed ? 'line-through' : 'none',
-                }}>{course?.title}</span>
+          <span style={{color:"black"}}>{course?.title}</span>
           <button
             onClick={() => removeCourse(course.id)} 
             className="delete-btn"
